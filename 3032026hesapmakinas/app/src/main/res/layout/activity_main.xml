@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextSayi1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:hint="1. Sayıyı Girin"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSayi2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="2. Sayıyı Girin"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSayi1" />
+
+    <TextView
+        android:id="@+id/textViewSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sonuç: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSayi2" />
+
+    <Button
+        android:id="@+id/btnTopla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btnCikar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSonuc" />
+
+    <Button
+        android:id="@+id/btnCikar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarp"
+        app:layout_constraintStart_toEndOf="@+id/btnTopla"
+        app:layout_constraintTop_toTopOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnCarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/btnBol"
+        app:layout_constraintStart_toEndOf="@+id/btnCikar"
+        app:layout_constraintTop_toTopOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnBol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCarp"
+        app:layout_constraintTop_toTopOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Üs"
+        app:layout_constraintEnd_toStartOf="@+id/btnKarekok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnKarekok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karekök"
+        app:layout_constraintEnd_toStartOf="@+id/btnBirBoluX"
+        app:layout_constraintStart_toEndOf="@+id/btnUs"
+        app:layout_constraintTop_toTopOf="@+id/btnUs" />
+
+    <Button
+        android:id="@+id/btnBirBoluX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKarekok"
+        app:layout_constraintTop_toTopOf="@+id/btnUs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
