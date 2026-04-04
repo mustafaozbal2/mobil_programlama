@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewBaslik1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Değeri Seçin (0-100):"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBaslik1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDeger1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seçilen: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#212121"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar1"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar1" />
+
+    <TextView
+        android:id="@+id/textViewBaslik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Değeri Seçin (0-100):"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeger1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBaslik2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDeger2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seçilen: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#212121"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Sayıyı Üret ve Başla"
+        android:textSize="18sp"
+        android:backgroundTint="#673AB7"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeger2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
