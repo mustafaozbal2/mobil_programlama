@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listViewSayilar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice" />
+
+        <ListView
+            android:id="@+id/listViewSehirler"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnKontrolEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eşleşmeyi Kontrol Et"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+
+</LinearLayout>
