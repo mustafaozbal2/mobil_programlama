@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnBtAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BT AÇ"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnBtKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BT KAPAT"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnGorunurOl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GÖRÜNÜR OL"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnListele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LİSTELE"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCihazlar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+</LinearLayout>
